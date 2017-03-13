@@ -17,7 +17,6 @@ module.exports = function(context) {
     var q = context.requireCordovaModule('q');
     var deferred = q.defer();
     var glob = context.requireCordovaModule('glob');
-    var xcode = require('xcode');
 
     getTargetLang(context)
         .then(function(languages) {
